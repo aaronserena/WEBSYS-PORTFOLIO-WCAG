@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/profile.jpg" type="image/jpg">
+  <title>Aaron Poe | Computer Science Student &amp; Developer</title>
+  <meta name="description"
+    content="Portfolio of Aaron Poe, computer science student and developer. Skills, projects, and contact information.">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add("js");
+    // Apply the saved theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var t = localStorage.getItem("portfolio-theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="brand">Aaron Poe</a>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="theme-icon theme-icon-moon" aria-hidden="true" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-sun" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <span id="theme-toggle-text">Dark</span>
+        </button>
+
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav"
+          aria-label="Open navigation menu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ================= HOME ================= -->
+    <section id="home" class="hero section" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 id="hero-title" class="hero-title">Aaron Poe</h1>
+          <p class="hero-role">Computer Science Student &amp; Developer</p>
+          <p class="hero-intro">
+            I build accessible, reliable web and mobile applications. I am currently
+            finishing my degree while working on personal and academic projects that
+            solve everyday problems for students and communities.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/images/profile.jpg" alt="Portrait of Aaron Poe" class="profile-image" width="480"
+            height="480">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+
+        <div class="about-grid">
+          <article class="about-block" aria-labelledby="about-bio-title">
+            <h3 id="about-bio-title">Biography</h3>
+            <p>
+              I am a computer science student who enjoys turning ideas into working
+              software. I started coding in high school, and since then I have focused
+              on writing code that is clear, maintainable, and usable by everyone,
+              including people who rely on keyboards and screen readers.
+            </p>
+          </article>
+
+          <article class="about-block" aria-labelledby="about-edu-title">
+            <h3 id="about-edu-title">Education</h3>
+            <p>
+              Bachelor of Science in Computer Science, expected graduation 2028.
+              Coursework includes data structures, web development, mobile
+              development, and database management. Cite Governor
+            </p>
+          </article>
+
+          <article class="about-block" aria-labelledby="about-background-title">
+            <h3 id="about-background-title">Background</h3>
+            <p>
+              My first projects were small class tools: a schedule organizer (ClassWave). That project taught
+              me how to design data models, work
+              with databases, and test software with real users.
+            </p>
+          </article>
+
+          <article class="about-block" aria-labelledby="about-career-title">
+            <h3 id="about-career-title">Career Interests</h3>
+            <p>
+              I am interested in front-end and full-stack development, with a special
+              focus on accessibility and inclusive design. I would like to work on
+              products that are used by large, diverse audiences.
+            </p>
+          </article>
+
+          <article class="about-block" aria-labelledby="about-interests-title">
+            <h3 id="about-interests-title">Personal Interests</h3>
+            <p>
+              Outside of programming I enjoy drawing, photography, and reading about
+              software history. I also volunteer at a local community center teaching
+              basic computer skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-lead">
+          Skills are grouped by category. Each skill is listed as text, so the
+          information does not depend on color or icons.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-group" aria-labelledby="skills-programming">
+            <h3 id="skills-programming">Programming</h3>
+            <ul class="skill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Kotlin</li>
+              <li>Python</li>
+              <li>Dart</li>
+              <li>Flutter</li>
+              <li>C</li>
+              <li>Lua</li>
+            </ul>
+          </article>
+
+          <article class="skill-group" aria-labelledby="skills-development">
+            <h3 id="skills-development">Development</h3>
+            <ul class="skill-list">
+              <li>Web Development</li>
+              <li>Mobile Development</li>
+              <li>Game Development</li>
+              <li>Database Management</li>
+            </ul>
+          </article>
+
+          <article class="skill-group" aria-labelledby="skills-tools">
+            <h3 id="skills-tools">Tools</h3>
+            <ul class="skill-list">
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Android Studio</li>
+              <li>Vercel</li>
+              <li>Xcode</li>
+              <li>Antigravity</li>
+              <li>Firebase</li>
+              <li>SQL</li>
+              <li>MongoDB</li>
+              <li>PostgreSQL</li>
+
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-lead">
+          A selection of academic and personal projects. Each card includes a short
+          description and the technologies used.
+        </p>
+
+
+        <div class="projects-grid">
+          <article class="project-card" aria-labelledby="project-classwave-title">
+            <img src="assets/images/classwave.png" class="project-image" width="640" height="400"
+              alt="ClassWave admin dashboard showing a class schedule table">
+            <div class="project-body">
+              <h3 id="project-classwave-title">ClassWave</h3>
+              <p>
+                Academic information and class schedule management system that helps
+                students track timetables, assignments, and grades in one place.
+              </p>
+              <h4 class="project-tech-label">Technologies</h4>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Flutter</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <p>
+                <a href="https://class-wave-admin.vercel.app/login.html" class="project-link" target="_blank"
+                  rel="noopener noreferrer">ClassWave
+                  (Admin)</a>
+                <a href="https://drive.google.com/file/d/1LsROznKT48yWmDWsDsDEiuROZGgiL7HM/view?usp=sharing"
+                  class="project-link" target="_blank" rel="noopener noreferrer"> ClassWave (Client)</a>
+              </p>
+            </div>
+          </article>
+
+
+
+          <article class="project-card" aria-labelledby="certauto-title">
+            <img src="assets/images/certauto.jpg" class="project-image" width="640" height="400"
+              alt="Cert.Auto certificate generator interface showing a template and recipient list">
+            <div class="project-body">
+              <h3 id="certauto-title">Cert.Auto</h3>
+              <p>
+                A web-based system that generates hundreds of certificates in bulk with just one click, using a
+                certificate template and recipient list.
+              </p>
+              <h4 class="project-tech-label">Technologies</h4>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <p>
+                <a href="https://aaronserena.github.io/CERT.AUTO/" class="project-link" target="_blank"
+                  rel="noopener noreferrer">Cert.Auto</a>
+              </p>
+            </div>
+          </article>
+
+
+
+          <article class="project-card" aria-labelledby="transcode-title">
+            <img src="assets/images/transcode.jpg" class="project-image" width="640" height="400"
+              alt="TransCode web app interface showing code conversion controls">
+            <div class="project-body">
+              <h3 id="transcode-title">TransCode</h3>
+              <p>
+                TransCode is a web-based system that converts a web app into an Android Studio-ready project/tech stack,
+                making it easier to turn the web app into an Android application.
+              </p>
+              <h4 class="project-tech-label">Technologies</h4>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+              </ul>
+              <p>
+                <a href="https://aaronserena.github.io/TransCode/" class="project-link" target="_blank"
+                  rel="noopener noreferrer">TransCode</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p class="section-lead">
+          The fastest way to reach me is by email. You can also use the form below.
+          Fields marked <strong>(required)</strong> must be completed.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email:</span>
+                <a href="mailto:aeuriee.serena@gmail.com">aeuriee.serena@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-label">GitHub:</span>
+                <a href="https://github.com/aaronserena" target="_blank" rel="noopener noreferrer">
+                  aaronserena
+                </a>
+              </li>
+              <li>
+                <span class="contact-label">Facebook:</span>
+                <a href="https://www.facebook.com/ron.laspi2005/" target="_blank" rel="noopener noreferrer">
+                  Poe Eron
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-field">
+                <label for="name">Name <span class="required-text">(required)</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-required="true"
+                  aria-describedby="name-hint name-error">
+                <p id="name-hint" class="field-hint">Enter your full name (at least 2 characters).</p>
+                <p id="name-error" class="field-error" role="alert"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email Address <span class="required-text">(required)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-required="true"
+                  aria-describedby="email-hint email-error">
+                <p id="email-hint" class="field-hint">We will only use this to reply to you.</p>
+                <p id="email-error" class="field-error" role="alert"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message <span class="required-text">(required)</span></label>
+                <textarea id="message" name="message" rows="6" required aria-required="true"
+                  aria-describedby="message-hint message-error"></textarea>
+                <p id="message-hint" class="field-hint">Write at least 10 characters.</p>
+                <p id="message-error" class="field-error" role="alert"></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+
+              <p id="form-status" class="form-status" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="current-year">2026</span> AARON POE SEREÑA. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
